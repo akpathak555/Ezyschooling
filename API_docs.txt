@@ -1,0 +1,81 @@
+1.) API to create a regular pizza and a square pizza
+BASE_URL= http://127.0.0.1:8000/api/v1/pizza/
+Method= POST
+Request=
+    {
+        "pizza_name": "Corn Pizza",
+        "pizza_size": "Medium",
+        "pizza_type": "Regular",
+        "pizza_price": "209"
+    }
+Response=
+    {
+        "message": "Pizza added successfully.",
+        "data": {
+            "id": 5,
+            "pizza_name": "Corn Pizza",
+            "pizza_size": "Medium",
+            "pizza_type": "Regular",
+            "pizza_price": 209
+        },
+        "success": true
+    }
+
+2.) API to list all the stored pizza
+BASE_URL= http://127.0.0.1:8000/api/v1/pizza/
+Method= GET
+Response=
+    {
+        "data": [
+            {
+                "id": 1,
+                "pizza_name": "Cheese Pizza",
+                "pizza_size": "Small",
+                "pizza_type": "Regular",
+                "pizza_price": 199
+            },
+            {
+                "id": 2,
+                "pizza_name": "Capsicum Pizza",
+                "pizza_size": "Large",
+                "pizza_type": "Square",
+                "pizza_price": 349
+            }
+        ],
+        "success": true
+    }
+
+3.) API to filter the pizza based on size, type
+NOTE*- Filter Is Optional
+BASE_URL= http://127.0.0.1:8000/api/v1/pizza/?size=Small&type=Regular
+Method= GET
+Response=
+    {
+        "data": [
+            {
+                "id": 1,
+                "pizza_name": "Cheese Pizza",
+                "pizza_size": "Small",
+                "pizza_type": "Regular",
+                "pizza_price": 199
+            },
+            {
+                "id": 2,
+                "pizza_name": "Capsicum Pizza",
+                "pizza_size": "Large",
+                "pizza_type": "Square",
+                "pizza_price": 349
+            }
+        ],
+        "success": true
+    }
+
+4.) API to delete any of the listed pizza
+id= item_id
+BASE_URL= http://127.0.0.1:8000/api/v1/pizza/id/
+Method= DELETE
+Response=
+    {
+        "message": "Data deleted successfully.",
+        "success": true
+    }

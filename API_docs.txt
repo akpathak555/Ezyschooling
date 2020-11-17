@@ -26,6 +26,7 @@ If Not then follow all step's from starting...
 
               <--API Payload For Testing-->
               Use (POSTMAN) for API Testing
+-------------------------------------------------------------------
 1.) API to create a regular pizza and a square pizza
 BASE_URL= http://127.0.0.1:8000/api/v1/pizza/
 Method= POST

@@ -1,3 +1,31 @@
+Open Your Terminal And Run This Command-
+    1.)git clone -b master https://github.com/akpathak555/Ezyschooling.git
+After Downloading Open This Project On Any Editor,like-vsCode
+    2.)ll 
+Check file is exist or not
+API_docs.txt
+Ezyschooling/
+.gitignore,
+requirements.txt 
+(if not then open a terminal in this current directory, where  requirements.txt exist)
+Type this command for virtual env installation
+    3.)pip3 install virtualenv
+Then hit this command for virtual evn activation
+    4.)virtualenv venv
+Then hit this command, it will install project all dependency.
+    5.)pip3 install -r requirements.txt
+Then hit this command
+    6.)cd Ezyschooling/
+Then hit this command and check manage.py is exist or not in your current repo.
+    7.)ll
+If Exist manage.py then hit these command-
+    8.)python3 manage.py migrate
+    9.)python3 manage.py runserver    
+If Not then follow all step's from starting...
+
+
+              <--API Payload For Testing-->
+              Use (POSTMAN) for API Testing
 1.) API to create a regular pizza and a square pizza
 BASE_URL= http://127.0.0.1:8000/api/v1/pizza/
 Method= POST
